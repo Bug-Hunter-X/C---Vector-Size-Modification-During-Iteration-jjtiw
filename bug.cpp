@@ -1,0 +1,3 @@
+std::vector<int> vec; // ... some operations on vec ... 
+for (int i = 0; i < vec.size(); ++i) { // ... some operations on vec[i] ... } 
+// The problem happens when the operations on vec inside the for loop modify the size of vec.  The loop will likely go out of bounds or stop prematurely.
